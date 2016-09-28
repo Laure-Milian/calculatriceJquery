@@ -24,7 +24,7 @@ function Nomdefonction() {
 	console.log("un truc");
 }*/
 
-$("button").click(function() {
+$("#calculer").click(function() {
 
 	var a = parseInt($("#Nombre1").val(), 10);
 	var b = parseInt($("#Nombre2").val(), 10);
@@ -51,3 +51,7 @@ $("button").click(function() {
 	$("#result").html(result);
 });
 
+$("#reinitialiser").click(function() {
+	$("input").val("");
+	$("#result").html("?");
+});
